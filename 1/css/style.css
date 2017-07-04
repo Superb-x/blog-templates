@@ -5,6 +5,23 @@
   font-weight: normal;
   font-style: normal;
 }
+@font-face {
+  font-family: 'Glyphicons Halflings';
+  src: url('../fonts/bootstrap/glyphicons-halflings-regular.eot');
+  src: url('../fonts/bootstrap/glyphicons-halflings-regular.eot?#iefix') format('embedded-opentype'), url('../fonts/bootstrap/glyphicons-halflings-regular.woff') format('woff'), url('../fonts/bootstrap/glyphicons-halflings-regular.ttf') format('truetype'), url('../fonts/bootstrap/glyphicons-halflings-regular.svg#glyphicons_halflingsregular') format('svg');
+}
+
+.glyphicon {
+  position: relative;
+  top: 1px;
+  display: inline-block;
+  font-family: 'Glyphicons Halflings';
+  -webkit-font-smoothing: antialiased;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 1;
+  -moz-osx-font-smoothing: grayscale;
+}
 /* =======================================================
 *
 * 	Template Style 
@@ -184,7 +201,7 @@ h1, h2, h3, h4, h5, h6, figure {
 
 ::selection {
   color: #fff;
-  background: #FC5185;
+  background: #337ab7;
 }
 
 .fh5co-nav {
@@ -982,7 +999,7 @@ footer {
   height: 150px;
   border: 5px solid #fff;
   border-radius: 50%;
-  margin: 20px auto;
+  margin: 10px auto;
   overflow: hidden;
 }
 
@@ -998,7 +1015,9 @@ footer {
 .aside {
   padding-left: 42px;
 }
-
+.aside>ul {
+  margin-bottom: 0;
+}
 #fh5co-aside .aside>a {
   display: block;
   color: #fff;
@@ -1035,7 +1054,7 @@ footer {
   border-radius: 6px;
   box-shadow: 0 5px 15px rgba(0,0,0,.5);
   margin: 50px auto 0;
-  padding: 20px;
+  padding: 50px 20px 20px;
   position: relative;
   overflow-y: scroll;
 } 
@@ -1051,12 +1070,18 @@ footer {
 .dialog .tag-list li a {
   color: #000;
 }
+.dialog .archives {
+  margin: 0;
+}
+.dialog .archives li {
+  line-height: 30px;
+}
 .dialog .archives li a{
   color: #000;
 }
 .dialog .footer {
   position: absolute;
-  bottom: 5%;
-  right: 5%;
+  top: 5%;
+  right: 0;
 }
 /*# sourceMappingURL=style.css.map */

@@ -29,7 +29,7 @@
 	<link rel="stylesheet" href="css/icomoon.css">
 	<!-- Bootstrap  -->
 	<link rel="stylesheet" href="css/bootstrap.css">
-	
+
 	<!-- Theme style  -->
 	<link rel="stylesheet" href="css/style.css">
 
@@ -54,8 +54,8 @@
 				<li><a href="">2017年8月</a></li>
 			</ul>
 			<div class="footer">
-				<button type="button" class="btn btn-default" aria-label="Left Align">
-					<span class="glyphicon glyphicon-align-left" aria-hidden="true"></span>
+				<button type="button" class="btn btn-default btn-sm">
+					<span class="glyphicon glyphicon-remove"></span>
 				</button>
 			</div>
 		</div>
@@ -67,7 +67,7 @@
 			</ul>
 			<div class="footer">
 				<button type="button" class="btn btn-default" aria-label="Left Align">
-					<span class="glyphicon glyphicon-align-left" aria-hidden="true"></span>
+					<span class="glyphicon glyphicon-remove" aria-hidden="true"></span>
 				</button>
 			</div>
 		</div>
@@ -79,7 +79,7 @@
 			</ul>
 			<div class="footer">
 				<button type="button" class="btn btn-default" aria-label="Left Align">
-					<span class="glyphicon glyphicon-align-left" aria-hidden="true"></span>
+					<span class="glyphicon glyphicon-remove" aria-hidden="true"></span>
 				</button>
 			</div>
 		</div>
@@ -104,10 +104,10 @@
 				<a href="#" class="tag">分类</a>				
 				<a href="#" class="tag">标签</a>
 			</div>
-			<div class="featured">
+			<!--<div class="featured">
 				<span>Bio</span>
 				<h2>I'm liuxianglin </a></h2>
-			</div>
+			</div>-->
 		</div>
 		<div id="fh5co-main-content">
 			<div class="fh5co-post"> 
@@ -211,7 +211,7 @@
 		var $mask = $("#mask"),
 			$dialog = $(".dialog");
 		$(".tag").click(function(){
-			console.log($(this).index(".tag"))
+			console.log($(this))
 			$mask.show(200).addClass('in');
 			$dialog.eq($(this).index(".tag")).fadeIn();
 		})
